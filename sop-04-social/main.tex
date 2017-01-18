@@ -22,6 +22,7 @@
 
 \usepackage{epigrafica}%changes default font to epigrafica
 \usepackage[LGR,OT1]{fontenc}
+\newcommand{\vocab}[1]{\texttt{\itshape #1}}%different font for vocab
 
 \def\labelitemi{--}
 
@@ -33,7 +34,7 @@
 \rhead{}
 \lfoot{Frost Entomological Museum}
 \cfoot{}
-\rfoot{SOP 04 - \thepage}
+\rfoot{SOP 04 --- \thepage}
 \renewcommand{\footrulewidth}{0.4pt}
 \title{SOP 04: Social Media}
 \author{Frost Entomological Museum Curator \& Interest Group}
@@ -106,7 +107,7 @@ Users are encouraged to basic HTML, in order to produce robust content that is m
 \section{Instagram}
 \url{https://www.instagram.com/frostentomologicalmuseum/}\\
 
-The Museum's Instagram account highlights aspects of the collection and staff activities. All staff are encouraged to contribute images and videos.\\
+\noindent{}The Museum's Instagram account highlights aspects of the collection and staff activities. All staff are encouraged to contribute images and videos.\\
 
 \noindent{}For access to the Instagram account see the Director.
 
@@ -114,6 +115,18 @@ The Museum's Instagram account highlights aspects of the collection and staff ac
 \url{http://ento.psu.edu/facilities/frost}\\
 
 \noindent{}The official Frost Entomological Museum website is maintained by the Department as part of the College's broader website. Administrative access is limited to the Director and the Departmental webmaster.
+
+\section{Accessibility on the Web}
+See this website for information about why it's important to make our sites accessible: \url{http://accessibility.psu.edu/nfbpsusettlement}
+
+\noindent{}Some tips for how to make our blog accessible:
+
+\begin{itemize}
+\item Use \vocab{alt} attribute to describe your images
+\item Make hyperlinks descriptive. Mark up ``list of HTML accessibility tips'' as the linked text, for example, rather than ``click here''. See 2.2 above.
+\item Don't use \vocab{<em>} and \vocab{<strong>} unless you really want to emphasize the point you're making. That is, don't use them for style alone. You can use \vocab{<i>} for italics and \vocab{<b>} for bold. Note that Wordpress uses \vocab{<em>} for italics and \vocab{<strong>} for bold!
+\item See other HTML accessibility tips here: \url{http://accessibility.psu.edu/checklist}
+\end{itemize}
 
 %\clearpage
 % adding bibliography here
